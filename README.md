@@ -9,7 +9,9 @@ This project shows how to install a button on the RaspBerry Pi board and configu
       <img src="https://github.com/engpedrorafael/shutdownd/blob/master/doc/images/connectorP5.jpg"/>
     </td>
     <td>
-      The button can be installed in the P5 header that is available at the Revision 2.0 PCB as shown in the picture. This way we can solder a small button NO (normally opened) between pins P5-06 (GPIO31) and P5-08 (GND). No further components are needed since we will do the pull-up of the P5-06 pin by software. This keeps the P1 Header free to be used for other applications.
+      The button can be installed in the P5 header that is available at the Revision 2.0 PCB as shown in the picture.
+      This way we can solder a small button NO (normally opened) between pins P5-06 (GPIO31) and P5-08 (GND). No further components are needed since we will do the pull-up of the P5-06 pin by software.
+      This keeps the P1 Header free to be used for other applications.
     </td>
   </tr>
 </table>
