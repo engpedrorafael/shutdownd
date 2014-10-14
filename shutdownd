@@ -1,0 +1,27 @@
+#! /bin/sh
+### BEGIN INIT INFO
+# Provides:          shutdownd
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: shutdown daemon
+# Description:       Monitors a GPIO pin to trigger a shutdown
+### END INIT INFO
+
+case "$1" in
+  start)
+    echo "Starting shutdown daemon"
+    /usr/local/sbin/shutdownd.sh & 
+    ;;
+  stop)
+    # No-op
+    ;;
+  *)
+    echo "Usage: /etc/init.d/shutdownd {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
+
