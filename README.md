@@ -1,7 +1,8 @@
 Intall a shutdown button on Raspberry Pi
 =======
 
-This project shows how to install a button on the RaspBerry Pi board and configure a service to be monitoring a GPIO pin. The GPIO pin to be used can be changed at line 3 of file shutdownd.sh. 
+This project shows how to install a button on the RaspBerry Pi board and configure a service to be monitoring a GPIO pin in order to perform a shutdown when the button is pressed for more than 2 seconds.
+The GPIO pin to be used can be changed at line 3 of file shutdownd.sh. 
 
 <table>
   <tr>
@@ -10,7 +11,9 @@ This project shows how to install a button on the RaspBerry Pi board and configu
     </td>
     <td>
       The button can be installed in the P5 header that is available at the Revision 2.0 PCB as shown in the picture.
+      
       This way we can solder a small button NO (normally opened) between pins P5-06 (GPIO31) and P5-08 (GND). No further components are needed since we will do the pull-up of the P5-06 pin by software.
+      
       This keeps the P1 Header free to be used for other applications.
     </td>
   </tr>
